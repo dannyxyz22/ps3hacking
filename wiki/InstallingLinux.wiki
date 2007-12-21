@@ -1,0 +1,28 @@
+#summary This page describes the process of installing Linux on Ps3 research machines
+
+= Introduction =
+
+The chosen distribution was Yellow Dog Linux. Most of the details on how to install were taken from IBM's [http://www.ibm.com/developerworks/power/library/pa-linuxps3-1/ page]
+
+
+= Steps =
+
+1. Download Yellow Dog Linux from TerraSoft. http://www.terrasoftsolutions.com/support/downloads/
+File yellowdog-5.0.1-phoenix-20070511-PS3.iso was used for the installation.
+
+2. Format Ps3 so that 10 GB are reserved for Ps3 OS and 50 GB for Linux. 
+
+3. Upgrade Ps3 firmware to version 2.10 using pen drive.
+
+4. Install linux through kboot and *installtext* command.
+
+= Hints = 
+
+Holding the power on/off Ps3 touch button switches back to GameOS mode, in case someone is stuck in Other OS mode.
+
+Ps3 changes menu color along the day, don't be worried.
+
+= Problems = 
+
+After installing kboot, during the boot, the message 
+_INPUT IRQ STATUS -32 RECEIVED_ was looped because of not being able to use the USB keyboard. After reading some threads it was discovered that some keyboards were not supported by default procedures. Trying a different USB keyboard, with a couple less features, the message was gone and installation proceeded smooth.
