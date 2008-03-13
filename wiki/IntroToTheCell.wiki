@@ -1,3 +1,5 @@
+#summary Visão geral do processador Cell
+
 =Comentário do paper "Introduction to the Cell Broadband Engine", de H. Peter Hofstee.=
 [http://www.google.com/url?sa=t&ct=res&cd=1&url=http%3A%2F%2Fwww-01.ibm.com%2Fchips%2Ftechlib%2Ftechlib.nsf%2Ftechdocs%2FD21E662845B95D4F872570AB0055404D%2F%24file%2F2053_IBM_CellIntro.pdf&ei=UMfYR5CiNKSigQS80by1CA&usg=AFQjCNE6KkpRdW84A5tnk9agA1gYuJt08Q&sig2=KFLQ5guvc1d7ZwyoAVqdUA link para o paper]
 
