@@ -1,0 +1,18 @@
+#summary an intro on how to compile and run a simple program that casts spes
+
+= Introduction =
+
+This report tells how to create a simple Ps3 program and compile it without makefiles. The code is heavily based on 
+
+= Hands on =
+
+Start by creating a spu_hello.c program that will just print out the SPE id:
+
+{{{
+#include <stdio.h>
+
+int main(unsigned long long spuid){
+  printf("Hello, World! (From SPU:%llx)\n",spuid);
+  return (0);
+}
+}}}
