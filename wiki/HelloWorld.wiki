@@ -54,9 +54,11 @@ And then, you are able to compile it and call it from the extern hello_spu varia
 
 Now you are able to run the program hello and see something like the following output:
 
+{{{
 Hello, World! (From SPU:1001a038)
 Hello, World! (From SPU:1001a3d8)
 Hello, World! (From SPU:1001a208)
 Hello, World! (From SPU:1001a5a8)
 Hello, World! (From SPU:1001a778)
 Hello, World! (From SPU:1001a948)
+}}}
