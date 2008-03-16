@@ -44,7 +44,7 @@ int main(void)
 }
 }}}
 
-Notice the *spe_create_thread* instruction that calls the spe program as a thread. The SPU_NUM should be 6 for the Ps3. It seems that 2 spes are not available for developers in Ps3. Now, a little trick to compile. Firtsly, embed the spe program through the command:
+Notice the *spe_create_thread* instruction that calls the spe program as a thread. Now, a little trick to compile. Firtsly, embed the spe program through the command:
 
 *embedspu hello_spu spu_hello spu_hello_embedded.o*
 
