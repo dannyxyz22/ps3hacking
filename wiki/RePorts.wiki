@@ -21,4 +21,6 @@ SettingUpPs3s
 
 [http://comos.cvs.sourceforge.net/comos/math/cfd.tar.gz CFDCode]
 
+[http://code.google.com/p/ps3hacking/downloads/list Docs]
+
 == Algorithm ==
