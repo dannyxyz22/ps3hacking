@@ -12,3 +12,4 @@ STL4Cell - algorithm library for cell (sponsored by IBM)
 
 Finance Project (needs some workup here...)
 
+CFD Project - Some intro on the basics behind CFD, and a more developed CFD program on top of the Cell processor.
