@@ -17,6 +17,8 @@ SettingUpPs3s
 
 == CFD ==
 
+[http://code.google.com/p/ps3hacking/wiki/cfd Cfd Project]
+
 [http://comos.cvs.sourceforge.net/*checkout*/comos/papers/cfd.pdf CFDReport]
 
 [http://comos.cvs.sourceforge.net/comos/math/cfd.tar.gz CFDCode]
