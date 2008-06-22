@@ -236,6 +236,6 @@ Não foi conseguida a compilação do programa SPE, pois algumas das bibliotecas
 
 = Bibliografia =
 
-FIALHO A. R. S.; MORAIS F.; PLIEUTAUD J. P.; EIZAK L.; Cell Broadband Engine Tutorial. [Online; acessado em 20 de junho de 2008. Disponível em [http://www.pad.lsi.usp.br/joomla/index.php?option=com_docman&task=doc_download&gid=79&Itemid=89]]
+FIALHO A. R. S.; MORAIS F.; PLIEUTAUD J. P.; EIZAK L.; Cell Broadband Engine Tutorial. [Online; acessado em 20 de junho de 2008. Disponível em [http://www.pad.lsi.usp.br/joomla/index.php?option=com_docman&task=doc_download&gid=79&Itemid=89 link]]
 
-IBM. Cell Broadband Engine Resource Center [Online; acessado em 20 de junho de 2008. Disponível em http://www-128.ibm.com/developerworks/power/cell/documents.html?S_TACT=105AGX16&S_CMP=LP] 
+IBM. Cell Broadband Engine Resource Center [Online; acessado em 20 de junho de 2008. Disponível em [http://www-128.ibm.com/developerworks/power/cell/documents.html?S_TACT=105AGX16&S_CMP=LP link]] 
