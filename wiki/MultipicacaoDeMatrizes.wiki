@@ -216,3 +216,11 @@ Na linha 51, o comando {{{(void)spe_wait(spe_ids[i], &status, 0)}}} espera o té
 35      return 0;
 36      }
 }}}
+
+A função principal _main_ recebe dois parâmetros: _id_ refere-se ao número identificador desta thread; _argp_ representa o ponteiro, pelo qual foram enviados, na chamada de criação da thread no código PPU, os dados a serem processados.
+
+Na linha 19, o recebimento dos dados enviados na criação da thread é iniciado. 
+
+As linhas 21 e 22 garantem que a transferência de dados foi concluída.
+
+O loop da linha 24 é responsável por repetir o cálculo 100000 vezes (_ctx.vezes = 100000_), para tornar o processamento mais demorado e ser possível a observação do tempo de execução.
