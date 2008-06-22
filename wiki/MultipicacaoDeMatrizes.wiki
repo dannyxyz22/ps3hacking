@@ -90,3 +90,79 @@ typedef struct
 será utilizada tanto no processamento PPE quanto SPE, mas a variável _vezes_ e o comando _ __attribute__((aligned(128))) context_ serão usados apenas no SPE.
 
 A seguir serão mostrados os programas PPE, que distribuirá o “trabalho” entre as SPEs, e SPE, que realiza o cálculo propriamente dito.
+
+== Programa PPE ==
+{{{
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <errno.h>
+#include <libspe.h>
+
+extern spe_program_handle_t matrix_spu;
+
+typedef struct
+{
+    int vezes, n, p, num;
+    float linmat1[SPE_THREADS];
+    float mat2[SPE_THREADS][SPE_THREADS];
+    float linresult[SPE_THREADS];
+} __attribute__((aligned(128))) context;
+
+int main()
+{
+    int i, j, k, status, m, n, p, vezes=1;
+    clock_t start, end;
+    double elapsed;
+    start = clock();  //inicia a contagem do tempo
+
+    scanf("%d %d %d", &m, &n, &p); //mat1(m x n) mat2(n x p) mat3(m x p)
+    m = n = p = SPE_THREADS; //deixamos o tamanho fixo em 8x8
+
+    context ctxs[m]; //cria o vetor de "contextos"
+
+    //le a matriz1, com uma linha para cada "contexto"
+    for(i=0; i<m; i++)
+        for(j=0; j<n; j++)
+    scanf("%f", &ctxs[i].linmat1[j]);
+
+    //le a matriz2, com cada "contexto" possuindo uma copia completa da mesma
+    for(i=0; i<m; i++)
+        for(j=0; j<n; j++)
+            for(k=0; k<p; k++)
+                if(i==0) scanf("%f", &ctxs[0].mat2[j][k]);
+                else ctxs[i].mat2[j][k]=ctxs[0].mat2[j][k];
+
+    //inicia as threads para cada SPE, enviando os dados necessarios
+    speid_t spe_ids[m];
+    for(i=0; i<m; i++)
+    {
+        ctxs[i].num = i;
+        ctxs[i].vezes = vezes;
+        ctxs[i].n = n;
+        ctxs[i].p = p;
+        spe_ids[i] = spe_create_thread(0, &matrix_spu, &ctxs[i], NULL, -1, 0);
+        if (spe_ids[i] == 0)
+        {
+            fprintf(stderr, "Failed spe_create_thread(rc=%d, errno=%d)\n",
+            spe_ids[i], errno);
+            exit(1);
+        }
+    }
+
+    // espera pela execucao completa de cada SPU-thread
+    for (i=0; i<m; i++)
+        (void)spe_wait(spe_ids[i], &status, 0);
+
+    //imprime a matriz resultado
+    for(i=0; i<m; i++, printf("\n"))
+        for(j=0; j<p; j++)
+            printf("%f ", ctxs[i].linresult[j]);
+
+    //calcula e imprime o tempo de execucao
+    end = clock();
+    elapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Tempo de execucao: %f\n",elapsed);
+    return 0;
+}
+}}}
