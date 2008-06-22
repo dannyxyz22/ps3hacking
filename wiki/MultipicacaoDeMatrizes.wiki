@@ -1,4 +1,4 @@
-#summary Tempo de execução de um programa serial _x_ paralelo.
+#summary Tempo de execução de um programa serial x paralelo.
 
 = Objetivo =
 
