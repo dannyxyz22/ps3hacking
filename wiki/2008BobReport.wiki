@@ -11,3 +11,9 @@ Besides reporting our results we had the opportunity to receive important inform
 
 
 = News from Cell Ecosystem =
+
+Check developerworks multicore acceleration
+
+Differences between compilers (check IBM compiler)
+
+[http://www.gedae.com/ Gedae] similar to RapidMind
