@@ -1,4 +1,6 @@
-#summary One-sentence summary of this page.
+#summary This wiki entry is related to June,23rd,2008 meeting with Robert Szabo in ITA
+
+http://ps3hacking.googlecode.com/svn/wiki/Bob.jpg
 
 = Introduction =
 
