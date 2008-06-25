@@ -2,14 +2,12 @@
 
 http://ps3hacking.googlecode.com/svn/wiki/Bob.jpg
 
+_from left to right: Flavio Crazato, Prof. Hirata, Robert Szabo, Daniel Baggio, André Keller Abade, Prof. Yano, Igor Aquino, Thomás Dias_
+
 = Introduction =
 
-Add your content here.
+In June, 23rd, 2008 we had the pleasure to receive the IBMer Ph. D. Robert M. Szabo, from Cell Ecosystem Development Systems and Mr. Flavio Carazato, from University Relations of IBM Brazil. They have come to see our Cell related research. Our presentation is available [http://ps3hacking.googlecode.com/svn/wiki/Cell-Robert%20Szabo.ppt here]. We had the opportunity to show our progress with Algorithms, Computational Fluid Dynamics, and Antenna Design (parallel quadrature). We were also able to show our 5 Ps3 cluster. 
+Besides reporting our results we had the opportunity to receive important information from Bob, which will be explored in detail below.
 
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= News from Cell Ecosystem =
