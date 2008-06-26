@@ -17,3 +17,7 @@ Check developerworks multicore acceleration
 Differences between compilers (check IBM compiler)
 
 [http://www.gedae.com/ Gedae] similar to RapidMind
+
+Mentor Graphics 
+[http://www.mentor.com/products/embedded_software/techpubs/mentorpaper_36740.cfm Optimizing Cell/B.E. Performance with Mentor Graphics’ Nucleus OS]
+
