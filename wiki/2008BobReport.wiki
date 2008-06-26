@@ -33,4 +33,7 @@ IBM has also developed a [http://www.redbooks.ibm.com/abstracts/sg247575.html re
 
 Another library that has been adapted to Cell was the [http://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms Basic Linear Algebra Subprograms]. A link about it is available [http://www.ibm.com/developerworks/blogs/page/powerarchitecture?entry=ibomb_blas_sdk30_6 here].
 
+Another very interesting use of Cell was through IBM's Dynamic Application Virtualization ([http://www.alphaworks.ibm.com/tech/dav DAV]) through which technology, an Excel spreadsheet could be connected to some SystemZ or Cell cluster, transparently to the user. Their example was with [http://en.wikipedia.org/wiki/Black-Scholes Black Scholes] if I am not mistaken.
+
+Another interesting information was about Brazilian Game Developer, Hoplon Infotainment, which seems to be building its [http://www-03.ibm.com/press/us/en/pressrelease/21433.wss infrastructure with QS20]. 
 
