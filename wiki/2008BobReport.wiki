@@ -31,4 +31,6 @@ Georgia Tech also maintains a [http://wiki.cc.gatech.edu/cellbuzz/index.php/Main
 
 IBM has also developed a [http://www.redbooks.ibm.com/abstracts/sg247575.html redbook] about Cell, which is called "Programming the Cell Broadband Engine Examples and Best Practices" 
 
+Another library that has been adapted to Cell was the [http://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms Basic Linear Algebra Subprograms]. A link about it is available [http://www.ibm.com/developerworks/blogs/page/powerarchitecture?entry=ibomb_blas_sdk30_6 here].
+
 
