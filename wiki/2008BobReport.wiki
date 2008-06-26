@@ -19,5 +19,15 @@ Differences between compilers (check IBM compiler)
 [http://www.gedae.com/ Gedae] similar to RapidMind
 
 Mentor Graphics 
-[http://www.mentor.com/products/embedded_software/techpubs/mentorpaper_36740.cfm Optimizing Cell/B.E. Performance with Mentor Graphics’ Nucleus OS]
+[http://www.mentor.com/products/embedded_software/techpubs/mentorpaper_36740.cfm Optimizing Cell/B.E. Performance with Mentor Graphics’ Nucleus OS] - fill form to get the paper. 
+
+Paper abstract: "The Nucleus OS can significantly improve the performance, response times and memory system utilization in many complex systems, where other bulkier OS choices add significant overhead and do not provide real-time response.  This paper discusses how the smaller footprint of Nucleus and its real-time capabilities can address improved resource utilization to optimize PPE and SPE interaction."
+
+IBM and Wind River [http://www.windriver.com/announces/ad_conference/ are adapting] the Cell/B.E. for a wide range of aerospace and defense applications. 
+
+Bob mentioned that MIT [http://ocw.mit.edu/ Open Courseware] would have a course about Cell, but the closest I have found was [http://cag.csail.mit.edu/ps3/index.shtml this].
+
+Georgia Tech also maintains a [http://wiki.cc.gatech.edu/cellbuzz/index.php/Main_Page wiki] to Cell BE.
+
+
 
