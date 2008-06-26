@@ -27,7 +27,8 @@ IBM and Wind River [http://www.windriver.com/announces/ad_conference/ are adapti
 
 Bob mentioned that MIT [http://ocw.mit.edu/ Open Courseware] would have a course about Cell, but the closest I have found was [http://cag.csail.mit.edu/ps3/index.shtml this].
 
-Georgia Tech also maintains a [http://wiki.cc.gatech.edu/cellbuzz/index.php/Main_Page wiki] to Cell BE.
+Georgia Tech also maintains a [http://wiki.cc.gatech.edu/cellbuzz/index.php/Main_Page wiki] to Cell BE. Besides the wiki, lots of [http://sourceforge.net/projects/cellbuzz open source libraries] developed by Georgia Tech are available, among of them: jpeg, fft, gzip, and mpeg2. 
 
+IBM has also developed a [http://www.redbooks.ibm.com/abstracts/sg247575.html redbook] about Cell, which is called "Programming the Cell Broadband Engine Examples and Best Practices" 
 
 
