@@ -47,6 +47,10 @@ A very interesting idea, by Sheldon Brown is the scalable [http://www.scalableci
 
 There are some cell related info [http://crca.ucsd.edu/sheldon/ here].
 
+Robert has also mentioned about [http://sti.cc.gatech.edu/Slides/Sreeram-070619.pdf GLIMPSES] a tool for Memory and program behavior estimation for SPEs.
+
+Another great repository for cell related publications is available [http://wiki.cc.gatech.edu/cellbuzz/index.php/Cell_Publications here].
+
 = Cell QS20/QS22 access = 
 
 One of the most interesting links that Bob has given us was a free access to Georgia Tech Cell clusters. In order to access it, one needs to fill this [http://wiki.cc.gatech.edu/cellbuzz/index.php/Main_Page form]. After that, an user is added so that remote access is available. Instructions for using the cluster are available [http://wiki.cc.gatech.edu/cellbuzz/index.php/User_Guide here].
