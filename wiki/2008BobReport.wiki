@@ -12,18 +12,15 @@ Besides reporting our results we had the opportunity to receive important inform
 
 = News from Cell Ecosystem =
 
-Check developerworks multicore acceleration
+Robert has provided us some of the most useful links he has collected about Cell related research. Starting from the must [http://www.ibm.com/developerworks/power developerworks], he told us to check some of the performance differences using different cell compilers. 
 
-Differences between compilers (check IBM compiler)
+We are very familiar to the RapidMind platform, but Bob has also showed us an alternative, which is the [http://www.gedae.com/ Gedae] system.
 
-[http://www.gedae.com/ Gedae] similar to RapidMind
-
-Mentor Graphics 
-[http://www.mentor.com/products/embedded_software/techpubs/mentorpaper_36740.cfm Optimizing Cell/B.E. Performance with Mentor Graphics’ Nucleus OS] - fill form to get the paper. 
+He also mentioned the Mentor Graphics . There's a paper about Nucleus OS: [http://www.mentor.com/products/embedded_software/techpubs/mentorpaper_36740.cfm Optimizing Cell/B.E. Performance with Mentor Graphics’ Nucleus OS] - fill form to get the paper. 
 
 Paper abstract: "The Nucleus OS can significantly improve the performance, response times and memory system utilization in many complex systems, where other bulkier OS choices add significant overhead and do not provide real-time response.  This paper discusses how the smaller footprint of Nucleus and its real-time capabilities can address improved resource utilization to optimize PPE and SPE interaction."
 
-IBM and Wind River [http://www.windriver.com/announces/ad_conference/ are adapting] the Cell/B.E. for a wide range of aerospace and defense applications. 
+IBM and Wind River [http://www.windriver.com/announces/ad_conference/ are adapting] the Cell/B.E. for a wide range of aerospace and defence applications. 
 
 Bob mentioned that MIT [http://ocw.mit.edu/ Open Courseware] would have a course about Cell, but the closest I have found was [http://cag.csail.mit.edu/ps3/index.shtml this].
 
@@ -35,7 +32,7 @@ Another library that has been adapted to Cell was the [http://en.wikipedia.org/w
 
 Another very interesting use of Cell was through IBM's Dynamic Application Virtualization ([http://www.alphaworks.ibm.com/tech/dav DAV]) through which technology, an Excel spreadsheet could be connected to some SystemZ or Cell cluster, transparently to the user. Their example was with [http://en.wikipedia.org/wiki/Black-Scholes Black Scholes] if I am not mistaken.
 
-Another interesting information was about Brazilian Game Developer, Hoplon Infotainment, which seems to be building its [http://www-03.ibm.com/press/us/en/pressrelease/21433.wss infrastructure with QS20].
+Another interesting information was about a Brazilian Game Developer, Hoplon Infotainment, which seems to be building its [http://www-03.ibm.com/press/us/en/pressrelease/21433.wss infrastructure with QS20].
 
 Robert also mentioned the [http://www.ibm.com/developerworks/power/library/pa-funwalf1 Accelerated Library Framework] (ALF) in the IBM SDK for Multicore Acceleration 3.0. There is also an ALF for Cell/B.E. Programmer's Guide and API Reference, Version 3.0, check resources of this [http://www.ibm.com/developerworks/power/library/pa-funwalf1 link].
 
