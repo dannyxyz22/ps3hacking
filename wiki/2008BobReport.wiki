@@ -46,3 +46,7 @@ The University of Basel is studying cancer through [http://fgb.informatik.unibas
 A very interesting idea, by Sheldon Brown is the scalable [http://www.scalablecity.net/ city] [http://www.scalablecity.net/4k-images/small_sc_3697.jpg].
 
 There are some cell related info [http://crca.ucsd.edu/sheldon/ here].
+
+= Cell QS20/QS22 access = 
+
+One of the most interesting links that Bob has given us was a free access to Georgia Tech Cell clusters. In order to access it, one needs to fill this [http://wiki.cc.gatech.edu/cellbuzz/index.php/Main_Page form]. After that, an user is added so that remote access is available. Instructions for using the cluster are available [http://wiki.cc.gatech.edu/cellbuzz/index.php/User_Guide here].
