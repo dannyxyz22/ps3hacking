@@ -1,4 +1,4 @@
-#Comparative study between a conventional processor and Cell processor with RapidMind
+Benchmarking between a parallel program and a non-parallel program running on Cell processor with RapidMind
 
 = Introduction =
 Neste wiki será feita uma comparação entre o desempenho do Cell e de um processador convencional. Para isso, será realizada a soma de vários números conforme mostrado abaixo: 
