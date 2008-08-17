@@ -15,7 +15,7 @@ Essa operação será realizada várias vezes repetidamente para tornar o cálcu
 === Instalação do RapidMind ===
 O RapidMind foi baixado deste [https://developer.rapidmind.net/downloads/2.0/cellbe/ site]. O arquivo instalado foi o [https://developer.rapidmind.net/downloads/2.0/cellbe/rapidmind-platform-cell-2.0.0.6546-cellsdk20.ppc.rpm/ RapidMind 2.0 for Cell BE SDK 2.0].
 Para realizar a instalação, basta digitar na linha de comando
-rpm -ivh arquivo.rpm, onde arquivo é o nome do arquivo a ser instalado.
+_rpm -ivh arquivo.rpm_, onde _arquivo_ é o nome do arquivo a ser instalado.
 O hardware utilizado é um Playstation 3 rodando Yellow Dog Linux.
 
 === Códigos-Fonte ===
@@ -23,9 +23,36 @@ Foram utilizados dois códigos-fonte. Um deles realiza as operações de forma n
 
 === Compilação dos códigos-fonte ===
 Para compilar os códigos, foi utilizado o seguinte comando:
-g++ -lrmplatform code.cpp –o code –O3
-bastando substituir code por ParallelSum ou NonParallelSum. A expressão -lrmplatform indica que a biblioteca do RapidMind deve ser utilizada e –O3 indica o maior nível de otimização.
+_g++ -lrmplatform code.cpp –o code –O3_
+bastando substituir code por ParallelSum ou NonParallelSum. A expressão _-lrmplatform_ indica que a biblioteca do RapidMind deve ser utilizada e _–O3_ indica o maior nível de otimização.
 
 = RESULTADOS =
-Os dois programas foram executados para vários valores de vezes. Os resultados estão mostrados na tabela e gráfico a seguir.
+Os dois programas foram executados para vários valores de _vezes_. Os resultados estão mostrados na tabela e gráfico a seguir.
+
+|| _vezes_ || ParallelSum time (ms) || NonParallelSum time (ms) ||
+|| 1 ||	145 || 10.9 ||
+|| 5 ||	148 || 51.2 ||
+|| 10 || 153 || 98.1 ||
+|| 50 || 184 || 486.0 ||
+|| 100 || 221 || 982.3 ||
+|| 500 || 530 || 4898.9 ||
+|| 1000 || 882 || 9719.4 ||
+|| 5000 || 3.973 || 48544.8 ||
+|| 10000 || 7762,42 || 97164.4 ||
+|| 50000 || 37.917 || 494354.0 ||
+
 http://ps3hacking.googlecode.com/files/WikiRapidmind.JPG
+
+Pode-se perceber que para valores pequenos de _vezes_, i.e., baixo volume de cálculos, o Cell fica em desvantagem com relação aos processadores comuns. Isso ocorre porque o RapidMind leva um certo tempo para inicializar suas funções e esse tempo não é compensado se o volume de operações não for grande o suficiente.
+Para descobrir esse tempo de inicialização, foram feitos 10 loops no trecho do código em que as funções do RapidMind são chamadas e foi medido o tempo de execução de cada loop. O resultado está mostrado na tabela abaixo:
+|| 1º loop || 143.289 milliseconds. ||
+|| 2º loop || 0.911 milliseconds. ||
+|| 3º loop || 0.800 milliseconds. ||
+|| 4º loop || 0.763 milliseconds. ||
+|| 5º loop || 0.788 milliseconds. ||
+|| 6º loop || 0.769 milliseconds. ||
+|| 7º loop || 0.756 milliseconds. ||
+|| 8º loop || 0.780 milliseconds. ||
+|| 9º loop ||0.775 milliseconds. ||
+|| 10º loop || 0.756 milliseconds. ||
+Ou seja, as funções do RapidMind levam cerca de 140 milliseconds para serem carregadas e isso ocorre apenas no primeiro loop. Nos loops seguintes, o tempo de execução é menor do que 1 millisecond.
