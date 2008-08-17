@@ -19,7 +19,7 @@ _rpm -ivh arquivo.rpm_, onde _arquivo_ é o nome do arquivo a ser instalado.
 O hardware utilizado é um Playstation 3 rodando Yellow Dog Linux.
 
 === Códigos-Fonte ===
-Foram utilizados dois códigos-fonte. Um deles realiza as operações de forma não-paralelizada, como qualquer processador faria. No Cell, ele é executado apenas na PPU. O outro código é paralelizado e executado usando tanto a PPU quanto as SPUs. A paralelização foi feita usando funções do RapidMind, conforme tutorias disponíveis [https://developer.rapidmind.net/tutorials aqui]. Ambos os códigos estão disponíveis [http://ps3hacking.googlecode.com/files/RapidMindOnCellCodes.rar neste link]. 
+Foram utilizados dois códigos-fonte. Um deles realiza as operações de forma não-paralelizada (_NonParallelSum_), como qualquer processador faria. No Cell, ele é executado apenas na PPU. O outro código é paralelizado (_ParallelSum_) e executado usando tanto a PPU quanto as SPUs. A paralelização foi feita usando funções do RapidMind, conforme tutorias disponíveis [https://developer.rapidmind.net/tutorials aqui]. Ambos os códigos estão disponíveis [http://ps3hacking.googlecode.com/files/RapidMindOnCellCodes.rar neste link]. 
 
 === Compilação dos códigos-fonte ===
 Para compilar os códigos, foi utilizado o seguinte comando:
@@ -58,4 +58,5 @@ Para descobrir esse tempo de inicialização, foram feitos 10 loops no trecho do
 || 10º loop || 0.756 milliseconds. ||
 
 Ou seja, as funções do RapidMind levam cerca de 140 milliseconds para serem carregadas e isso ocorre apenas no primeiro loop. Nos loops seguintes, o tempo de execução é menor do que 1 millisecond.
+
 Portanto, pode-se concluir que para valores de _vezes_ maiores que 1000, para os quais o tempo de inicialização é menor que 10% do tempo total de execução, o Cell realiza os cálculos deste exemplo 10 vezes mais rápido que um processador comum, que opera em paralelo.
