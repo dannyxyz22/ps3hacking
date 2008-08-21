@@ -1,13 +1,17 @@
 #summary Benchmarking between a parallel program and a non-parallel program running on Cell processor with RapidMind
 
 = Introduction =
-Neste wiki será feita uma comparação entre o desempenho de um programa em paralelo _x_ serial, ambos rodando num processador Cell com RapidMind. Para isso, será realizada a soma de vários números conforme mostrado abaixo: 
+In this wiki, a comparison will be made between parallel program _x_ non-parallel program, both of them running on Cell with Rapidmind. For this, the sum of some numbers will be made as shown below:
+
+_Neste wiki será feita uma comparação entre o desempenho de um programa em paralelo _x_ serial, ambos rodando num processador Cell com RapidMind. Para isso, será realizada a soma de vários números conforme mostrado abaixo:_
 
 || inputArray || outputArray ||
 || { {0, 1, 2} , {1, 2, 3} } ||	{(0+1+2) = 3, (1+2+3) = 6 } ||
 || { {1, 2, 3} , {2, 3, 4} } ||	{(1+2+3) = 6, (2+3+4) = 9 } ||
 || { {2, 3, 4} , {3, 4, 5} } ||	{(2+3+4) = 9, (3+4+5) = 12} ||
 || ... || ... ||
+
+this 
 
 Essa operação será realizada várias vezes repetidamente para tornar o cálculo mais custoso e, dessa forma, aumentar o tempo de execução do programa e facilitar a comparação de desempenho.
 
