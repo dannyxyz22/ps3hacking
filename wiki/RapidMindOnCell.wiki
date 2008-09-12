@@ -3,34 +3,36 @@
 = Introduction =
 In this wiki, a comparison will be made between parallel program _x_ non-parallel program, both of them running on Cell with Rapidmind. For this, the sum of some numbers will be made as shown below:
 
-_Neste wiki será feita uma comparação entre o desempenho de um programa em paralelo _x_ serial, ambos rodando num processador Cell com RapidMind. Para isso, será realizada a soma de vários números conforme mostrado abaixo:_
-
 || inputArray || outputArray ||
 || { {0, 1, 2} , {1, 2, 3} } ||	{(0+1+2) = 3, (1+2+3) = 6 } ||
 || { {1, 2, 3} , {2, 3, 4} } ||	{(1+2+3) = 6, (2+3+4) = 9 } ||
 || { {2, 3, 4} , {3, 4, 5} } ||	{(2+3+4) = 9, (3+4+5) = 12} ||
 || ... || ... ||
 
-this 
+This operation will be done many times repeatedly in order to make more calculations and increase execution time so it can be measured.
 
-Essa operação será realizada várias vezes repetidamente para tornar o cálculo mais custoso e, dessa forma, aumentar o tempo de execução do programa e facilitar a comparação de desempenho.
+= Hands On=
+=== RapidMind Installation===
+RapidMind was downloaded from [https://developer.rapidmind.net/downloads/2.0/cellbe/ site]. The file installed was [https://developer.rapidmind.net/downloads/2.0/cellbe/rapidmind-platform-cell-2.0.0.6546-cellsdk20.ppc.rpm/ RapidMind 2.0 for Cell BE SDK 2.0]. To start installation, just type _rpm -ivh file.rpm_ on command line, where _file_ is the file's name that will be installed. The hardware used here is a PlayStation 3 running Yellow Dog Linux.
 
-= Procedimento =
-=== Instalação do RapidMind ===
 O RapidMind foi baixado deste [https://developer.rapidmind.net/downloads/2.0/cellbe/ site]. O arquivo instalado foi o [https://developer.rapidmind.net/downloads/2.0/cellbe/rapidmind-platform-cell-2.0.0.6546-cellsdk20.ppc.rpm/ RapidMind 2.0 for Cell BE SDK 2.0].
 Para realizar a instalação, basta digitar na linha de comando
 _rpm -ivh arquivo.rpm_, onde _arquivo_ é o nome do arquivo a ser instalado.
 O hardware utilizado é um Playstation 3 rodando Yellow Dog Linux.
 
-=== Códigos-Fonte ===
-Foram utilizados dois códigos-fonte. Um deles realiza as operações de forma não-paralelizada (_NonParallelSum_), como qualquer processador faria. No Cell, ele é executado apenas na PPU. O outro código é paralelizado (_ParallelSum_) e executado usando tanto a PPU quanto as SPUs. A paralelização foi feita usando funções do RapidMind, conforme tutorias disponíveis [https://developer.rapidmind.net/tutorials aqui]. Ambos os códigos estão disponíveis [http://ps3hacking.googlecode.com/files/RapidMindOnCellCodes.rar neste link]. 
+=== Source Code ===
+Two source codes was used. One of them realize non-parallel operations (_NonParallelSum_), as any microprocessor could done. On Cell, it is executed only in PPU. The other code is parallelized (_ParallelSum_) and it is executed using both SPU and PPU. Parallelization was done using RapidMind functions, according of tutorials available [https://developer.rapidmind.net/tutorials here]. Both of codes are available on [http://ps3hacking.googlecode.com/files/RapidMindOnCellCodes.rar this link].
+
+Foram utilizados dois códigos-fonte. Um deles realiza as operações de forma não-paralelizada (_NonParallelSum_), como qualquer processador faria. No Cell, ele é executado apenas na PPU. O outro código é paralelizado (_ParallelSum_) e executado usando tanto a PPU quanto as SPUs. A paralelização foi feita usando funções do RapidMind, conforme tutorias disponíveis [https://developer.rapidmind.net/tutorials aqui]. Ambos os códigos estão disponíveis [http://ps3hacking.googlecode.com/files/RapidMindOnCellCodes.rar this link]. 
 
 === Compilação dos códigos-fonte ===
 Para compilar os códigos, foi utilizado o seguinte comando:
 _g++ -lrmplatform code.cpp –o code –O3_
 bastando substituir _code_ por _ParallelSum_ ou _NonParallelSum_. A expressão _-lrmplatform_ indica que a biblioteca do RapidMind deve ser utilizada e _–O3_ indica o maior nível de otimização.
 
-= Resultados =
+= Results =
+Programs were executed for many values of _vezes_. Results are showed on the following table.
+
 Os dois programas foram executados para vários valores de _vezes_. Os resultados estão mostrados na tabela e gráfico a seguir.
 
 || _vezes_ || ParallelSum time (ms) || NonParallelSum time (ms) ||
@@ -47,6 +49,10 @@ Os dois programas foram executados para vários valores de _vezes_. Os resultado
 
 http://ps3hacking.googlecode.com/files/WikiRapidmind.JPG
 
+One thing that could be observed is for small values of _vezes_, i.e., low calculus volume, Cell takes more time than a common microprocessor to finish operations. It happens because RapidMind has a initialization time for its functions and this time is very relevant if operations' volume is not big enough.
+
+In order to find this initialization time, 10 loops was done on code snippet where RapidMind functions are called and execution time of each loop was measured. Results are showed on the next table:
+
 Pode-se perceber que para valores pequenos de _vezes_, i.e., baixo volume de cálculos, o Cell fica em desvantagem com relação aos processadores comuns. Isso ocorre porque o RapidMind leva um certo tempo para inicializar suas funções e esse tempo não é compensado se o volume de operações não for grande o suficiente.
 Para descobrir esse tempo de inicialização, foram feitos 10 loops no trecho do código em que as funções do RapidMind são chamadas e foi medido o tempo de execução de cada loop. O resultado está mostrado na tabela abaixo:
 
@@ -60,6 +66,10 @@ Para descobrir esse tempo de inicialização, foram feitos 10 loops no trecho do
 || 8º loop || 0.780 milliseconds. ||
 || 9º loop ||0.775 milliseconds. ||
 || 10º loop || 0.756 milliseconds. ||
+
+So, RapidMind functions take around 140 milliseconds to be loaded and this happens only on the first loop. On other loops, executions time is smaller than 1 millisecond.
+
+Therefore, is was concluded that for _vezes_'s values bigger thar 1000, for those initializations time is less than 10% of total execution time, Cell does all calculus of this example 10 times faster than a common microprocessor.
 
 Ou seja, as funções do RapidMind levam cerca de 140 milliseconds para serem carregadas e isso ocorre apenas no primeiro loop. Nos loops seguintes, o tempo de execução é menor do que 1 millisecond.
 
