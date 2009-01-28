@@ -10,6 +10,8 @@ The chosen distribution was Yellow Dog Linux. Most of the details on how to inst
 1. Download Yellow Dog Linux from TerraSoft. http://www.terrasoftsolutions.com/support/downloads/
 File yellowdog-5.0.1-phoenix-20070511-PS3.iso was used for the installation.
 
+edit: try this link for Fedora 9 http://www.bohmer.net/ps3_stuff/install-fedora-8-on-PS3.html
+
 2. Format Ps3 so that 10 GB are reserved for Ps3 OS and 50 GB for Linux. 
 
 3. Upgrade Ps3 firmware to version 2.10 using pen drive.
