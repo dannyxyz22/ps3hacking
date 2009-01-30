@@ -1,0 +1,26 @@
+#summary Fedora 9 installation
+#labels cellsdk,fc9,installation
+
+= Introduction =
+
+Download PowerPC Fedora 9 DVD iso
+
+Download petitboot instead of kboot
+
+Save petitboot as otheros.bld in /PS3/otheros of a pendrive
+
+Install Other OS in Ps3 Menu (format the partition before).
+
+Reboot. Insert DVD. Choose DVD and installation from petitboot.
+
+Make sure you make eth0 available during FC9 installation.
+
+Download the sdk iso from IBM. 
+
+Copy it to FC9. Mount it to /mnt/cell for instance
+
+rpm -ivh  cell-install-3.1.0-0.0.noarch.rpm from mounted iso.
+
+Go to /opt/cell/
+
+cellsdk install
