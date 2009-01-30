@@ -13,6 +13,8 @@ IntroToTheCell
 
 HelloWorld - an intro on how to compile and run a simple program that casts spes
 
+Ps3Cluster
+
 SettingUpPs3s
 
 == CFD ==
