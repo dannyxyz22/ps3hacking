@@ -1,5 +1,7 @@
 #summary This page describes the process of installing Linux on Ps3 research machines
 
+Check this link for InstallingFedora9
+
 = Introduction =
 
 The chosen distribution was Yellow Dog Linux. Most of the details on how to install were taken from IBM's [http://www.ibm.com/developerworks/power/library/pa-linuxps3-1/ page]
