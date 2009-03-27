@@ -9,7 +9,7 @@ This section shows reports developed along the research
 
 InstallingLinux on PS3
 
-InstallingSDK
+InstallingSdk
 
 IntroToTheCell
 
