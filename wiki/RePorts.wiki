@@ -9,6 +9,8 @@ This section shows reports developed along the research
 
 InstallingLinux on PS3
 
+InstallingSDK
+
 IntroToTheCell
 
 HelloWorld - an intro on how to compile and run a simple program that casts spes
