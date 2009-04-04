@@ -1,0 +1,23 @@
+#summary First ideas about using MPI and OpenMP on cell programming
+#labels OpenMP,MPI
+
+= Introduction =
+
+This post talks about some ideas given by people who work at wind tunnel in Sao Jose dos Campos - SP. They work on CFD codes that run on a cluster and had already parallelized some CFD simulations.
+
+= Details =
+
+These are topics talked on meeting at wind tunnel:
+  * *Metis*: software used for partitioning CFD grid in smaller grids in order to distribute those grids among processors on cluster;
+  * *MPICH2*: MPI version used by them. They have never tried another MPI version to make a benchmark and check each performance. MPICH2 already has a Fortran 90 compiler. Besides, they also talked about a software called [http://www.mcs.anl.gov/research/projects/perfvis/software/viewers/index.htm Jumpshot], which is a Java-based visualization tool for doing postmortem performance analysis
+  * **:
+  * **:
+  * **:
+  * **:
+  * **:
+  * **:
+  * **:
+  * **:
+  * **:
+  * **:
+  * **:
