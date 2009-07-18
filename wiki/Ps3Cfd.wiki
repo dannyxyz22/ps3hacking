@@ -1,5 +1,6 @@
 #summary This page shows the status of the CFD on Cell experiment
 
+http://ps3hacking.googlecode.com/svn/trunk/cfd/docs/paralelo.jpg
 
 = Tasks =
 
