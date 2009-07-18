@@ -7,6 +7,8 @@ This section shows reports developed along the research
 
 = Reports =
 
+Ps3Cfd
+
 InstallingLinux on PS3
 
 InstallingSdk
