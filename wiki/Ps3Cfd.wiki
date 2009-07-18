@@ -7,7 +7,7 @@
   * Create a cluster following http://www.ps3cluster.umassd.edu/
   * Create CFD programs using SPE parallelism with RapidMind
   * Create CFD programs using SPE parallelism with IBM libraries
-  * Investigate OpenRT
-  * Benchmark RapidMind x IBM libraries x OpenRT
+  * Investigate OpenCL
+  * Benchmark RapidMind x IBM libraries x OpenCL
   * Use cluster
   * Benchmark cluster
