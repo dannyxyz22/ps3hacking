@@ -12,7 +12,7 @@ The same file was compiled on both machines and give the same names. Note that t
 
 One *remarkable* note was: average time for Ps3 to execute the pi example program was 36 seconds on one core, with the input 200000000, 29.19 seconds with 2 cores (PPE), notebook was 5.57 seconds with 2 cores, 8.66 seconds with only one.
 
-||Assembly || Seconds ||
+||*Assembly* || *Seconds* ||
 ||Ps3 _one core_ || 36 ||
 ||Ps3 _two cores_ || 29.19 ||
 ||Core2 duo _one core_ || 8.66 ||
