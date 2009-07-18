@@ -11,6 +11,8 @@ Ps3Cfd - running Computational Fluid Dynamics in a Ps3 cluster
 
 [http://code.google.com/p/ps3hacking/wiki/RapidMindOnCell RapidMindBenchmark] - Simple parallel sum program to benchmark rapidmind
 
+[http://code.google.com/p/ps3hacking/wiki/MultipicacaoDeMatrizes MatrixMultiply]
+
 InstallingLinux on PS3
 
 InstallingSdk
