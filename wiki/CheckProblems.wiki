@@ -24,4 +24,4 @@ Programs were run like:
 `time mpirun -np 4 time ./pi < in.txt`
 in which in.txt = 200000000
 
-So, a Core2 Duo (Intel(R) Core(TM)2 Duo CPU T7300  @ 2.00GHz), seems to be around 4 times faster than the Ps3s PowerPcs. Although differences in compilers are also noticed. Ps3 is running a 2.6.25-14.fc9.ppc64
+So, a Core2 Duo (Intel(R) Core(TM)2 Duo CPU T7300  @ 2.00GHz), seems to be around 4 times faster than the Ps3s !PowerPcs. Although differences in compilers are also noticed. Ps3 is running a 2.6.25-14.fc9.ppc64
