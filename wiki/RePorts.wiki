@@ -7,7 +7,7 @@ This section shows reports developed along the research
 
 = Reports =
 
-Ps3Cfd
+Ps3Cfd - running Computational Fluid Dynamics in a Ps3 cluster
 
 InstallingLinux on PS3
 
