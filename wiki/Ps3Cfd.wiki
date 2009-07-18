@@ -3,7 +3,7 @@
 
 = Tasks =
 
-  * Install Linux on Ps3s
+  * ~~Install Linux on Ps3s~~
   * Read papers: "Experiments in scientific computation on the PlayStation 3"
   * Create a cluster following http://www.ps3cluster.umassd.edu/
   * Create CFD programs using SPE parallelism with RapidMind
