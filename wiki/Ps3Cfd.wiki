@@ -1,0 +1,13 @@
+#summary This page shows the status of the CFD on Cell experiment
+
+
+= Tasks =
+
+  * Install Linux on Ps3s
+  * Create a cluster following http://www.ps3cluster.umassd.edu/
+  * Create CFD programs using SPE parallelism with RapidMind
+  * Create CFD programs using SPE parallelism with IBM libraries
+  * Investigate OpenRT
+  * Benchmark RapidMind x IBM libraries x OpenRT
+  * Use cluster
+  * Benchmark cluster
