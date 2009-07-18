@@ -1,4 +1,4 @@
-#summary Problems found during setup
+#summary Problems found during cluster setup
 
 Only one Ps3 was available, so the cluster was built upon a Ps3 and a Core2 Duo notebook.
 
