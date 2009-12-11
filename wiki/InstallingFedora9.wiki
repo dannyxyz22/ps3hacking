@@ -24,3 +24,21 @@ rpm -ivh  cell-install-3.1.0-0.0.noarch.rpm from mounted iso.
 Go to /opt/cell/
 
 cellsdk install
+
+= Problems =
+
+== Petitboot with around 7 MB - Corrupted data ==
+When using petitboot 0.2 from official site, I had the following error: "Corrupted data". The problem is some kind of error with browsers or with the server of petitboot. The file should have around 3MB while it has around 7MB when this is done. The solution was downloading it through linux's command wget. It's simple, just go to the command line and type:
+{{{
+    wget http://ozlabs.org/~jk/projects/petitboot/downloads/bin-0.2/otheros.bld
+}}}
+
+The downloaded file should have around 3MB.
+
+== Root password doesn't work ==
+Try using the caps when typing the root password EVEN THOUGH you might not have typed it in caps lock. For some reason the root password was with caps.
+A 
+{{{
+passwd
+}}}
+command as root will be enough to get your password back to previous caps.
