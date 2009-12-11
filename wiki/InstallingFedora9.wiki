@@ -15,6 +15,11 @@ Reboot. Insert DVD. Choose DVD and installation from petitboot.
 
 Make sure you make eth0 available during FC9 installation.
 
+After installation make sure you
+{{{
+yum install openmpi openmpi-dev gcc
+}}}
+
 Download the sdk iso from IBM. 
 
 Copy it to FC9. Mount it to /mnt/cell for instance
